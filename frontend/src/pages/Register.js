@@ -16,7 +16,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/register", form);
+      await axios.post("https://lostnfounditemmanagementsystem.onrender.com/api/register", form);
       alert("Registration successful!");
     } catch (err) {
       alert(err.response?.data?.msg || "Error");
